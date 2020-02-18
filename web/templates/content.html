@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="col-md-4">
+        <nav class="navbar-inverse visible-lg visible-md" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">菜鸟教程</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">iOS</a></li>
+                        <li><a href="#">SVN</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Java</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="col-md-8">
+        {% block content %} {% endblock %}
+    </div>
+{% endblock %}
